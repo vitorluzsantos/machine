@@ -9,26 +9,71 @@
 	</head>
 
 	<body>
-		<center>
-			<h1>SPTecher's Machine</h1>
+		<div id="container1">
+			<h1>Vitor's Machine</h1>
 
-			<h3>Digite um número decimal:</h3>
-			<input id="demo1" type="text" placeholder="Ex: 42">
-			<br><br>
+			<div id="mainContent">
+				<div class="content">
+					<p>Digite um número decimal:</p>
+					<input id="demo1" type="text" placeholder="Ex: 42">
+					<button onclick="converter()">Converter</button>
+				</div>
+				<div class="content">
+					<p>Resultados:</p>
+					<p>Octal:
+					<div class="response" id="demo2"></div>
+					</p>
+					<p>Hexadecimal:
+					<div class="response" id="demo3"></div>
+					</p>
+					<p>Binário:
+					<div class="response" id="demo4"></div>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="container2">
+			<h1>Operações</h1>
 
-			<button onclick="converter()">Converter</button>
-
-			<h3>Resultados:</h3>
-			<p>Octal:
-			<div id="demo2"></div>
-			</p>
-			<p>Hexadecimal:
-			<div id="demo3"></div>
-			</p>
-			<p>Binário:
-			<div id="demo4"></div>
-			</p>
-		</center>
+			<div id="mainContent">
+				<div class="content2">
+					<p>Digite um valor</p>
+					<input id="idValor1" type="text" placeholder="Ex: 42">
+					<select id="baseValor1">
+						<option value="decimal">Decimal</option>
+						<option value="hexadecimal">Hexadecimal</option>
+						<option value="binario">Binario</option>
+						<option value="octal">Octal</option>
+					</select>
+					<p>Digite um valor</p>
+					<input id="idValor2" type="text" placeholder="Ex: 42">
+					<select id="baseValor2">
+						<option value="decimal">Decimal</option>
+						<option value="hexadecimal">Hexadecimal</option>
+						<option value="binario">Binario</option>
+						<option value="octal">Octal</option>
+					</select>
+					<p>Selecione o operador</p>
+					<select id="operacao">
+						<option value="soma">Soma</option>
+						<option value="subtracao">Subtração</option>
+						<option value="multiplicacao">Multiplicação</option>
+						<option value="divisao">Divisão</option>
+					</select>
+					<p>Selecione a base do Resultado</p>
+					<select id="baseResultado">
+						<option value="decimal">Decimal</option>
+						<option value="hexadecimal">Hexadecimal</option>
+						<option value="binario">Binario</option>
+						<option value="octal">Octal</option>
+					</select>
+					<button onclick="calcular()">Calcular</button>
+				</div>
+				<div class="content3">
+					<p>Resultado:</p>
+				</div>
+			</div>
+		</div>
 
 		<script src="js/script.js"></script>
 	</body>
