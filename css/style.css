@@ -27,6 +27,7 @@ body{
 	text-align: center;
 	border: solid 2px #535353;
 	padding-top: 50px;
+	background-color: #282828;
 }
 
 #container2{
@@ -48,11 +49,10 @@ body{
 	justify-content: space-around;
 	align-items: flex-start;
 	margin-top: 20px;
-	margin-bottom: 30px;
 }
 
 .content{
-	width: 40%;
+	width: 45%;
 	height: 300px;
 	border: solid 2px #535353;
 	padding: 40px;
@@ -79,7 +79,6 @@ body{
 	background-color: #282828;
 }
 
-/* TEXTOS */
 
 p{
 	margin-top: 10px;
@@ -88,7 +87,6 @@ p{
 	font-size: 14px;
 }
 
-/* INPUTS */
 
 input{
 	width: 100%;
@@ -107,7 +105,6 @@ input:focus{
 	border-color: #3ddbd9;
 }
 
-/* SELECT */
 
 select{
 	width: 100%;
@@ -125,7 +122,6 @@ select:focus{
 	border-color: #3ddbd9;
 }
 
-/* BOTÃO */
 
 button{
 	width: 150px;
@@ -145,7 +141,6 @@ button:hover{
 	transform: translateY(-2px);
 }
 
-/* TITULOS */
 
 h1{
 	color:#ff7eb6;

@@ -47,5 +47,5 @@ function calcular(){
 	if(baseRes == "octal") resultadoFinal = resultado.toString(8);
 
 	document.querySelector(".content3").innerHTML = 
-		"<p>Resultado: " + resultadoFinal + "</p>";
+		"Resultado: <p class='response'>" + resultadoFinal + "</p>";
 }
